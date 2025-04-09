@@ -11,7 +11,7 @@ def listGenero():
         generos=Genero.objects()
     except Exception as error:
         mensaje=str(error)
-    return render_template('listadegeneros.html',mensaje=mensaje,generos=generos)
+    return render_template('listgeneros.html',mensaje=mensaje,generos=generos)
     
 @app.route("/agregenero/",methods=['GET', 'POST'])
 def addGenero():
